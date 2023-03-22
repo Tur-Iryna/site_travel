@@ -1,0 +1,488 @@
+@media (max-width:1150px) {
+  .packages {
+    &__items {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width:1075px) {
+  .search {
+    &__form-input__first {
+      max-width: 230px;
+    }
+
+    &__form-input__min,
+    &__form-input__max {
+      width: 150px;
+    }
+  }
+
+  .destination {
+    &__inner {
+      justify-content: center;
+    }
+
+    &__text-name {
+      font-size: 300px;
+    }
+  }
+
+  .best {
+    &__items {
+      flex-wrap: wrap;
+    }
+  }
+
+  .reviews {
+    padding: 90px 0;
+  }
+
+  .experience {
+
+    &__inner {
+      display: block;
+
+    }
+
+    &__text-left {
+      max-width: 100%;
+      margin-bottom: 30px;
+
+    }
+
+    &__box-desc {
+      max-width: 100%;
+    }
+  }
+
+  .newsletter {
+    &__inner {
+      gap: 80px;
+    }
+
+    &__text {
+      font-size: 33px;
+    }
+
+    &__input {
+      width: 285px;
+    }
+  }
+
+  .footer {
+    &__menu-contacts {
+      margin-right: 80px;
+    }
+
+    &__menu-links {
+      margin-right: 100px;
+    }
+  }
+}
+
+
+
+@media (max-width:950px) {
+  .discount__clock {
+    gap: 20px
+  }
+
+  .destination {
+    &__text-name {
+      font-size: 250px;
+    }
+  }
+
+  .blogs {
+    &__slider-img {
+      width: 100%;
+    }
+  }
+
+  .newsletter {
+
+    &__text {
+      font-size: 26px;
+    }
+
+  }
+
+  .footer {
+    &__menu {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+}
+
+@media (max-width:880px) {
+  .search {
+    input {
+      max-width: 100%;
+    }
+
+    &__form {
+      display: block;
+      margin-left: 20px;
+
+    }
+
+    &__form-image {
+      position: relative;
+      left: -40px;
+      top: 45px;
+    }
+
+    &__dropdown,
+    &__dropbtn {
+      width: 100%;
+    }
+
+    &__form-input__min,
+    &__form-input__max {
+      width: 100%;
+    }
+
+    &__btn {
+      width: 100%;
+      margin: 20px 0 0;
+
+    }
+  }
+
+  .best {
+    &__items {
+      display: block;
+    }
+
+    &__item {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .destination {
+    &__text-name {
+      font-size: 200px;
+    }
+  }
+
+  .header__bottom-menu__list {
+    gap: 30px;
+  }
+
+  .newsletter {
+    padding: 80px 0;
+
+    &__inner {
+      display: block;
+    }
+
+    &__input {
+      width: 100%;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
+
+  .experience__text-one {
+    font-size: 70px;
+  }
+
+  .footer {
+    &__menu {
+      display: block;
+    }
+
+    &__menu-text {
+      max-width: 100%;
+    }
+
+    &__menu-list {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width:750px) {
+  .discount {
+    &__line {
+      width: 80px;
+      height: 80px;
+      font-size: 40px;
+    }
+  }
+
+  .header__top {
+    &-menu__user {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 90px;
+      background-color: $color-white;
+      display: block;
+      text-align: center;
+      transform: translateY(-200%);
+      transition: all .3s;
+
+    }
+
+
+    &-menu__user.header__top-menu--active {
+      transform: translateY(0%);
+      z-index: 10;
+    }
+
+    &-menu__link {
+      display: block;
+      padding: 15px 0;
+
+    }
+
+    &-inner {
+      align-items: center;
+    }
+
+    &-menu__btn {
+      display: block;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+
+  .header__bottom {
+    &-menu__list {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 90px;
+      background-color: #ffff;
+      display: block;
+      text-align: center;
+      transform: translateY(-200%);
+      transition: all .3s;
+      z-index: 10;
+    }
+
+
+    &-menu__list.header__bottom-menu--active {
+      transform: translateY(35%);
+      top: 65px;
+    }
+
+    &-menu__link {
+      display: block;
+      padding: 10px 0;
+    }
+
+    &-menu__btn {
+      display: block;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+@media (max-width:650px) {
+  .header__content {
+    &-text {
+      padding-top: 80px;
+      margin-bottom: 35px;
+    }
+
+    &__content-title {
+      font-size: 60px;
+      line-height: 62px;
+    }
+
+    &-desc {
+      font-size: 37px;
+      line-height: 32px;
+    }
+  }
+
+  .destination {
+    padding: 95px 0;
+
+    &__text-name {
+      font-size: 150px;
+    }
+  }
+
+  .packages {
+    padding: 70px 0 20px;
+  }
+
+  .reviews {
+    padding: 50px 0;
+  }
+
+  .experience {
+    padding: 70px 0;
+  }
+
+  .blogs,
+  .newsletter {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width:550px) {
+  .destination {
+    padding-top: 60px;
+
+    &__text-name {
+      font-size: 130px;
+    }
+
+    &__title {
+      font-size: 27px;
+    }
+  }
+
+  .experience__text-one {
+    font-size: 60px;
+  }
+}
+
+
+@media (max-width:450px) {
+  .header__top {
+    &-menu__list {
+      flex-wrap: wrap;
+      gap: 10px;
+
+      &:nth-child(1) {
+        padding-left: 0;
+      }
+    }
+
+    &-menu__link {
+      padding: 0;
+    }
+  }
+
+  .header__content {
+    &-desc {
+      font-size: 33px;
+      line-height: 32px;
+    }
+
+    &-title {
+      font-size: 39px;
+      line-height: 27px;
+    }
+
+  }
+
+  .best {
+    padding-top: 30px;
+
+    &__item {
+      padding: 45px 40px 51px 20px;
+    }
+  }
+
+  .destination {
+    padding-top: 25px;
+
+    &__text-name {
+      font-size: 95px;
+      margin-top: 35px;
+    }
+  }
+
+  .discount {
+    padding-top: 60px;
+    height: 580px;
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__title span {
+      font-size: 35px;
+    }
+
+    &__line {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+  }
+
+  .packages__img {
+    min-width: 100%;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .experience {
+    &__text-one {
+      font-size: 50px;
+    }
+
+    &__box-info {
+      display: block;
+    }
+
+    &__box-price {
+      display: grid;
+      gap: 15px;
+    }
+
+    &__btn-left {
+      margin-right: 20px;
+    }
+  }
+
+  .blogs {
+    &__text {
+      margin-bottom: 40px;
+    }
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width:320px) {
+  .experience {
+    &__text-left {
+      font-size: 26px;
+    }
+
+    &__title-one {
+      font-size: 39px;
+    }
+
+    &__title {
+      font-size: 26px;
+
+    }
+
+    &__title-second {
+      width: 105px;
+      height: 50px;
+    }
+  }
+
+  .blogs,
+  .newsletter {
+    padding: 40px 0;
+  }
+
+}

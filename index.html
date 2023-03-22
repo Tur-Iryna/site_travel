@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Dream</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <nav class="header__top-menu">
+              <ul class="header__top-menu__list">
+                <li class="header__top-menu__link">
+                  <a class="header__top-link__email" href="mailto:contact@example.com">contact@example.com</a>
+                </li>
+                <li class="header__top-menu__link">
+                  <a class="header__top-link__phone" href="tel:+00000000">(00)-000-000</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="header__top-list">
+              <button class="header__top-menu__btn">
+                <img class="header__top-menu__img" src="images/icons/user-icon.svg" alt="menu button">
+              </button>
+              <ul class="header__top-menu__list header__top-menu__user">
+                <li class="header__top-menu__link">
+                  <a class="header__top-link" href="#">Sign In</a>
+                </li>
+                <li class="header__top-menu__link">
+                  <a class="header__top-link" href="#">Sign Up</a>
+                </li>
+                <li class="header__top-menu__link">
+                  <a class="header__top-link" href="#">Cart</a>
+                </li>
+                <li class="header__top-menu__link">
+                  <a class="header__top-link" href="#">My Account</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-inner">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.png" alt="logo">
+            </a>
+            <nav class="header__bottom-menu">
+              <button class="header__bottom-menu__btn">
+                <img class="header__bottom-menu__img" src="images/icons/menu-btn.svg" alt="menu button">
+              </button>
+              <ul class="header__bottom-menu__list">
+                <li class="header__bottom-menu__link">
+                  <a class="header__bottom-link" href="#">Home</a>
+                </li>
+                <li class="header__bottom-menu__link">
+                  <a class="header__bottom-link" href="#best">About</a>
+                </li>
+                <li class="header__bottom-menu__link">
+                  <a class="header__bottom-link" href="#destination">Tours</a>
+                </li>
+                <li class="header__bottom-menu__link">
+                  <a class="header__bottom-link" href="#packages">Packages</a>
+                </li>
+                <li class="header__bottom-menu__link">
+                  <a class="header__bottom-link" href="#blogs">Blog</a>
+                </li>
+                <li class="header__bottom-menu__link">
+                  <a class="header__bottom-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header__content" style="background-image: url('images/banner.jpg');">
+        <div class="container">
+          <div class="header__content-inner">
+            <div class="header__content-text">
+              <h2 class="header__content-title">Traveller for Life.</h2>
+              <p class="header__content-desc">Live your best moments</p>
+            </div>
+            <div class="header__content-search">
+              <div class="search">
+                <form class="search__form search__form-top" action="#">
+                  <div class="search__form-image">
+                    <img class="search__form-img" src="images/icons/icon-location.png" alt="icon location">
+                  </div>
+                  <input class="search__form-input__first" type="text" placeholder="Where are you going?">
+                  <div class="search__form-image">
+                    <img class="search__form-img" src="images/icons/icon-location.png" alt="icon location">
+                  </div>
+                  <input class="search__form-input__location" type="text" placeholder="Location">
+                  <div class="search__form-image">
+                    <img class="search__form-img" src="images/icons/icon-calendar.png" alt="icon calendar">
+                  </div>
+                  <div class="search__dropdown">
+                    <button class="search__dropbtn" onclick="myFunction()">Tour Type</button>
+                    <div class="search__dropdown-content" id="Dropdown">
+                      <a class="search__dropdown-link" href="#">Expeditions Tours</a>
+                      <a class="search__dropdown-link" href="#">Cruises</a>
+                      <a class="search__dropdown-link" href="#">Resorts</a>
+                    </div>
+                  </div>
+                </form>
+                <form class="search__form" action="#">
+                  <div class="search__form-image">
+                    <img class="search__form-img" src="images/icons/icon-price.png" alt="icon price">
+                  </div>
+                  <input class="search__form-input__min" type="text" placeholder="Min price">
+                  <div class="search__form-image">
+                    <img class="search__form-img" src="images/icons/icon-price.png" alt="icon price">
+                  </div>
+                  <input class="search__form-input__max" type="text" placeholder="Max price">
+                  <div class="search__form-image">
+                    <img class="search__form-img" src="images/icons/icon-languages.png" alt="icon languages">
+                  </div>
+                  <div class="search__dropdown">
+                    <button class="search__dropbtn" onclick="myFunctionSecond()">Language</button>
+                    <div class="search__dropdown-content" id="Dropdownsecond">
+                      <a class="search__dropdown-link" href="#">English</a>
+                      <a class="search__dropdown-link" href="#">German</a>
+                      <a class="search__dropdown-link" href="#">Spanish</a>
+                    </div>
+                  </div>
+                  <button class="search__btn" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="best" id="best">
+        <div class="container-section">
+          <div class="best__inner">
+            <div class="best__items">
+              <div class="best__item" data-aos="fade-up">
+                <img class="best__item-img" src="images/icons/best-1.png" alt="icon destination">
+                <div class="best__item-text">
+                  <h4 class="best__item-title">Best Destinations</h4>
+                  <p class="best__item-desc">
+                    Find out what the best destinations in the World are as awarded by millions
+                    of real...
+                  </p>
+                </div>
+              </div>
+              <div class="best__item" data-aos="fade-up">
+                <img class="best__item-img" src="images/icons/best-2.png" alt="icon destination">
+                <div class="best__item-text">
+                  <h4 class="best__item-title">Best Price Guaranteed</h4>
+                  <p class="best__item-desc">
+                    We constantly ensures to have lowest prices available online and it is committed to protect...
+                  </p>
+                </div>
+              </div>
+              <div class="best__item" data-aos="fade-up">
+                <img class="best__item-img" src="images/icons/best-3.png" alt="icon destination">
+                <div class="best__item-text">
+                  <h4 class="best__item-title">Instant Booking</h4>
+                  <p class="best__item-desc">
+                    Find out what the best destinations in the World are as awarded by millions
+                    of real...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="destination" id="destination">
+        <div class="container">
+          <h2 class="title">Top Destinations</h2>
+          <p class="destination__text">
+            Find out what the best destinations in the World
+          </p>
+          <div class="destination__inner">
+            <a class="destination__link" href="#">
+              <img class="destination__link-img" data-aos="zoom-in" src="images/destination/1.jpg"
+                alt="mountains and nature">
+              <span class="destination__link-name">Bhutan</span>
+            </a>
+            <a class="destination__link" href="#">
+              <img class="destination__link-img" data-aos="zoom-in" src="images/destination/2.jpg"
+                alt="mountains and nature">
+              <span class="destination__link-name">Japan</span>
+            </a>
+            <a class="destination__link" href="#">
+              <img class="destination__link-img" data-aos="flip-up" src="images/destination/3.jpg"
+                alt="mountains and nature">
+              <span class="destination__link-name">Nepal</span>
+            </a>
+          </div>
+        </div>
+        <p class="destination__text-name">Travel</p>
+      </section>
+      <section class="discount" style="background-image: url('images/discount-bg.jpg');">
+        <div class="discount__inner">
+          <div class="container">
+            <h4 class="discount__title">
+              <span>Get upto 50% discount</span><br>
+              by joining us within 11 march
+            </h4>
+            <div class="discount__clock" data-time="'2023-03-25'">
+              <div class="discount__clock-item">
+                <div class="discount__text">Days</div>
+                <span class="discount__days discount__line"></span>
+              </div>
+              <div class="discount__clock-item">
+                <div class="discount__text">Hours</div>
+                <span class="discount__hours discount__line"></span>
+              </div>
+              <div class="discount__clock-item">
+                <div class="discount__text">Minutes</div>
+                <span class="discount__minutes discount__line"></span>
+              </div>
+              <div class="discount__clock-item">
+                <div class="discount__text">Seconds</div>
+                <span class="discount__seconds discount__line"></span>
+              </div>
+            </div>
+            <a class="discount__btn" href="#">Join Us</a>
+          </div>
+        </div>
+      </section>
+      <section class="packages" id="packages">
+        <div class=" container">
+          <h2 class="title" data-aos="zoom-in">Featured Packages</h2>
+          <p class="packages__text text">
+            We will help you find the trip that's perfect for you!
+          </p>
+          <div class="packages__inner">
+            <div class="packages__items">
+              <div class="packages__item">
+                <img class="packages__img" src="images/packages/1.jpg" alt="boats in the sea">
+                <div class="packages__box">
+                  <h3 class="packages__title">Thailand City Tour</h3>
+                  <p class="packages__desc">
+                    An excellent opportunity for a family trip with children, a vacation for two, with friends and
+                    solo
+                    travel.
+                  </p>
+                  <div class="packages__box-info">
+                    <a class="packages__btn" href="#">Book now</a>
+                    <span class="packages__price">$120</span>
+                  </div>
+                </div>
+              </div>
+              <div class="packages__item">
+                <img class="packages__img" src="images/packages/2.jpg" alt="beach and sea">
+                <div class="packages__box">
+                  <h3 class="packages__title">
+                    Tour to the Maldives
+                  </h3>
+                  <p class="packages__desc">
+                    An excellent opportunity for a family trip with children, a vacation for two, with friends and
+                    solo
+                    travel.
+                  </p>
+                  <div class="packages__box-info">
+                    <a class="packages__btn" href="#">Book now</a>
+                    <span class="packages__price">$1250</span>
+                  </div>
+                </div>
+              </div>
+              <div class="packages__item">
+                <img class="packages__img" src="images/packages/3.jpg" alt="">
+                <div class="packages__box">
+                  <h3 class="packages__title">Tour to Phuket</h3>
+                  <p class="packages__desc">
+                    An excellent opportunity for a family trip with children, a vacation for two, with friends and
+                    solo
+                    travel.
+                  </p>
+                  <div class="packages__box-info">
+                    <a class="packages__btn" href="#">Book now</a>
+                    <span class="packages__price">$320</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="title">Clients Reviews</h2>
+          <p class="reviews__text text">
+            We have many happy customers who booked holidays with us.
+          </p>
+          <div class="reviews__inner">
+            <div class="slider">
+              <div class="slider__items">
+                <div class="slider__item">
+                  <div class="slider__box">
+                    <img class="slider__img" src="images/slider/slider-1.png" alt="image men">
+                    <div class="slider__text">
+                      <p class="slider__desc">
+                        I enjoyed my vacation!
+                        I am very grateful for the well-chosen tour for me. I liked everything, thank you!
+                      </p>
+                      <p class="slider__author">John Smith</p>
+                      <p class="slider__place">London, UK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__box">
+                    <img class="slider__img" src="images/slider/slider-2.png" alt="image women">
+                    <div class="slider__text">
+                      <p class="slider__desc">
+                        I enjoyed my vacation!
+                        I am very grateful for the well-chosen tour for me. I liked everything, thank you!
+                      </p>
+                      <p class="slider__author">Jennie White</p>
+                      <p class="slider__place">New York, America</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__box">
+                    <img class="slider__img" src="images/slider/slider-3.png" alt="image men">
+                    <div class="slider__text">
+                      <p class="slider__desc">
+                        I enjoyed my vacation!
+                        I am very grateful for the well-chosen tour for me. I liked everything, thank you!
+                      </p>
+                      <p class="slider__author"> Aiko Takahashi</p>
+                      <p class="slider__place">London, UK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__box">
+                    <img class="slider__img" src="images/slider/slider-1.png" alt="image men">
+                    <div class="slider__text">
+                      <p class="slider__desc">
+                        I enjoyed my vacation!
+                        I am very grateful for the well-chosen tour for me. I liked everything, thank you!
+                      </p>
+                      <p class="slider__author">John Smith</p>
+                      <p class="slider__place">London, UK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__box">
+                    <img class="slider__img" src="images/slider/slider-2.png" alt="image women">
+                    <div class="slider__text">
+                      <p class="slider__desc">
+                        I enjoyed my vacation!
+                        I am very grateful for the well-chosen tour for me. I liked everything, thank you!
+                      </p>
+                      <p class="slider__author">Jennie White</p>
+                      <p class="slider__place"> New York, America</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__box">
+                    <img class="slider__img" src="images/slider/slider-3.png" alt="image men">
+                    <div class="slider__text">
+                      <p class="slider__desc">
+                        I enjoyed my vacation!
+                        I am very grateful for the well-chosen tour for me. I liked everything, thank you!
+                      </p>
+                      <p class="slider__author"> Aiko Takahashi</p>
+                      <p class="slider__place">London, UK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__box">
+                    <img class="slider__img" src="images/slider/slider-1.png" alt="image men">
+                    <div class="slider__text">
+                      <p class="slider__desc">
+                        I enjoyed my vacation!
+                        I am very grateful for the well-chosen tour for me. I liked everything, thank you!
+                      </p>
+                      <p class="slider__author">John Smith</p>
+                      <p class="slider__place">London, UK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__box">
+                    <img class="slider__img" src="images/slider/slider-2.png" alt="image women">
+                    <div class="slider__text">
+                      <p class="slider__desc">
+                        I enjoyed my vacation!
+                        I am very grateful for the well-chosen tour for me. I liked everything, thank you!
+                      </p>
+                      <p class="slider__author">Jennie White</p>
+                      <p class="slider__place">New York, America</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__box">
+                    <img class="slider__img" src="images/slider/slider-3.png" alt="image men">
+                    <div class="slider__text">
+                      <p class="slider__desc">
+                        I enjoyed my vacation!
+                        I am very grateful for the well-chosen tour for me. I liked everything, thank you!
+                      </p>
+                      <p class="slider__author">Aiko Takahashi</p>
+                      <p class="slider__place">London, UK</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experience">
+        <div class="experience__wrapper">
+          <div class="container">
+            <div class="experience__inner">
+              <div class="experience__box-left" data-aos="zoom-in-right">
+                <p class="experience__text-left">Have Your Lifetime
+                  <span class="experience__text-one">Experience</span>
+                </p>
+              </div>
+              <div class="experience__box">
+                <h4 class="experience__title">
+                  Special Offer<br>
+                  <span class="experience__title-one">40%</span>
+                  <span class="experience__title-second">off</span>
+                </h4>
+                <p class="experience__name">Thailand</p>
+                <div class="experience__box-info">
+                  <ul class="experience__box-info__text">
+                    <li class="experience__box-info__desc">
+                      5 Days 6 Nights
+                    </li>
+                    <li class="experience__box-info__desc">
+                      2 Person
+                    </li>
+                    <li class="experience__box-info__desc">
+                      5 Star Accomodation
+                    </li>
+                  </ul>
+                  <ul class="experience__box-info__text">
+                    <li class="experience__box-info__desc">
+                      Transportation
+                    </li>
+                    <li class="experience__box-info__desc">
+                      Food Facilities
+                    </li>
+                  </ul>
+                </div>
+                <p class="experience__box-desc">
+                  An excellent opportunity for a family trip with children, a vacation for two, with friends and solo
+                  travel.
+                </p>
+                <div class="experience__box-price">
+                  <span class="experience__price">$900</span>
+                  <s class="experience__price-line">$1500</s>
+                  <img class="experience__img" src="images/icons/stars.png" alt="icon star rating">
+                  <span class="experience__reviews">(38 Review)</span>
+                </div>
+                <a class="experience__btn experience__btn-left" href="#">Book Now</a>
+                <a class="experience__btn" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blogs" id="blogs">
+        <div class="container">
+          <h2 class="title" data-aos="fade-up">Latest Blogs</h2>
+          <p class=" blogs__text text">
+            Travel News from all over the world for comfortable travel
+          </p>
+          <div class="blogs__inner">
+            <div class="slider blogs__slider">
+              <div class="slider__items blogs__slider-items">
+                <div class="slider__item blogs__slider-item">
+                  <img class="blogs__slider-img" src="images/slider/1.jpg" alt="tourist and mountains">
+                  <div class="blogs__slider-box">
+                    <p class="slider__desc blogs__slider-desc">
+                      14th April, 2020
+                    </p>
+                    <h4 class="blogs__slider-title">What are the types of tourism?</h4>
+                    <p class="blogs__slider-text">
+                      Іf you are making vacation plans, deciding where to go, this article will help you. We will
+                      explain what types of tourism there are.
+                    </p>
+                    <a class="blogs__slider-link" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="slider__item blogs__slider-item">
+                  <img class="blogs__slider-img" src="images/slider/2.jpg" alt="sea and beach">
+                  <div class="blogs__slider-box">
+                    <p class="slider__desc blogs__slider-desc">
+                      14th April, 2020
+                    </p>
+                    <h4 class="blogs__slider-title">What are the types of tourism?</h4>
+                    <p class="blogs__slider-text">
+                      Іf you are making vacation plans, deciding where to go, this article will help you. We will
+                      explain what types of tourism there are.
+                    </p>
+                    <a class="blogs__slider-link" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="slider__item blogs__slider-item">
+                  <img class="blogs__slider-img" src="images/slider/3.jpg" alt="sea and beach">
+                  <div class="blogs__slider-box">
+                    <p class="slider__desc blogs__slider-desc">
+                      14th April, 2020
+                    </p>
+                    <h4 class="blogs__slider-title">What are the types of tourism?</h4>
+                    <p class="blogs__slider-text">
+                      Іf you are making vacation plans, deciding where to go, this article will help you. We will
+                      explain what types of tourism there are.
+                    </p>
+                    <a class="blogs__slider-link" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="slider__item blogs__slider-item">
+                  <img class="blogs__slider-img" src="images/slider/1.jpg" alt="tourist and mountains">
+                  <div class="blogs__slider-box">
+                    <p class="slider__desc blogs__slider-desc">
+                      14th April, 2020
+                    </p>
+                    <h4 class="blogs__slider-title">What are the types of tourism?</h4>
+                    <p class="blogs__slider-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, qu is nostrud exercitation una
+                    </p>
+                    <a class="blogs__slider-link" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="slider__item blogs__slider-item">
+                  <img class="blogs__slider-img" src="images/slider/2.jpg" alt="sea and beach">
+                  <div class="blogs__slider-box">
+                    <p class="slider__desc blogs__slider-desc">
+                      14th April, 2020
+                    </p>
+                    <h4 class="blogs__slider-title">What are the types of tourism?</h4>
+                    <p class="blogs__slider-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, qu is nostrud exercitation una
+                    </p>
+                    <a class="blogs__slider-link" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="slider__item blogs__slider-item">
+                  <img class="blogs__slider-img" src="images/slider/3.jpg" alt="sea and beach">
+                  <div class="blogs__slider-box">
+                    <p class="slider__desc blogs__slider-desc">
+                      14th April, 2020
+                    </p>
+                    <h4 class="blogs__slider-title">What are the types of tourism?</h4>
+                    <p class="blogs__slider-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, qu is nostrud exercitation una
+                    </p>
+                    <a class="blogs__slider-link" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="slider__item blogs__slider-item">
+                  <img class="blogs__slider-img" src="images/slider/1.jpg" alt="tourist and mountains">
+                  <div class="blogs__slider-box">
+                    <p class="slider__desc blogs__slider-desc">
+                      14th April, 2020
+                    </p>
+                    <h4 class="blogs__slider-title">What are the types of tourism?</h4>
+                    <p class="blogs__slider-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, qu is nostrud exercitation una
+                    </p>
+                    <a class="blogs__slider-link" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="slider__item blogs__slider-item">
+                  <img class="blogs__slider-img" src="images/slider/2.jpg" alt="sea and beach">
+                  <div class="blogs__slider-box">
+                    <p class="slider__desc blogs__slider-desc">
+                      14th April, 2020
+                    </p>
+                    <h4 class="blogs__slider-title">What are the types of tourism?</h4>
+                    <p class="blogs__slider-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, qu is nostrud exercitation una
+                    </p>
+                    <a class="blogs__slider-link" href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="slider__item blogs__slider-item">
+                  <img class="blogs__slider-img" src="images/slider/3.jpg" alt="sea and beach">
+                  <div class="blogs__slider-box">
+                    <p class="slider__desc blogs__slider-desc">
+                      14th April, 2020
+                    </p>
+                    <h4 class="blogs__slider-title">Stay safe to keep others safe</h4>
+                    <p class="blogs__slider-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, qu is nostrud exercitation una
+                    </p>
+                    <a class="blogs__slider-link" href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter__inner">
+            <div class="newsletter__box">
+              <h3 class="newsletter__text">
+                Subscribe to our<br>
+                newsletter for updates
+              </h3>
+            </div>
+            <div class="newsletter__box">
+              <p class="newsletter__text-info">
+                For the best recommendation of your.
+              </p>
+              <p class="newsletter__text-info">
+                Please subscribe us.
+              </p>
+              <form class="newsletter__form" action="#">
+                <input class="newsletter__input" type="text" placeholder="Enter Your Email Here">
+                <button class="newsletter__btn" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__menu">
+          <div class="footer__menu-list footer__menu-contacts">
+            <a class="logo footer__logo" href="#">
+              <img class="logo__img" src="images/logo.png" alt="logo">
+            </a>
+            <p class="footer__menu-text">
+              Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod tempor incididunt.
+            </p>
+            <h4 class="footer__menu-title">
+              Connect With Us
+            </h4>
+            <ul class="footer__menu-social">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  <img class="footer__menu-img" src="images/icons/icon-twitter.png" alt="icon-twitter">
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  <img class="footer__menu-img" src="images/icons/icon-google+.png" alt="icon google+">
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">
+                  <img class="footer__menu-img" src="images/icons/icon-linkedin.png" alt="icon linkedin">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__menu-list footer__menu-links">
+            <li class="footer__menu-item">
+              <h4 class="footer__title">Quick Links</h4>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Home</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">About Us</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Blogs</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Testimonials</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="footer__menu-list footer__menu-links">
+            <li class="footer__menu-item">
+              <h4 class="footer__title">Destinations</h4>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">China</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Venezuela
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Brazil</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Australia</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">London</a>
+            </li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <h4 class="footer__title">Our Activites</h4>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Trekking</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Peak Climbing</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Biking</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">River Rafting</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Cultural Tours</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

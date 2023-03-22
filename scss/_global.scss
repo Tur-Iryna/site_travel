@@ -1,0 +1,32 @@
+body {
+  @extend %libre-400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-text;
+
+}
+
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-section {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.title {
+  @extend %inter-700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: $title;
+}
+
+.text {
+  font-size: 18px;
+  text-align: center;
+}
